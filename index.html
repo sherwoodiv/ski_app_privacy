@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys Trip — Group Ski Tracking</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            background: linear-gradient(180deg, #0b1a2e 0%, #1a3a5c 40%, #f5f5f7 40%);
+            min-height: 100vh;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            color: #fff;
+        }
+        .hero-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .hero .subtitle {
+            font-size: 1.15rem;
+            opacity: 0.85;
+            margin-bottom: 32px;
+        }
+        .app-store-badge {
+            display: inline-block;
+            background: #fff;
+            color: #1d1d1f;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.15s;
+        }
+        .app-store-badge:hover { transform: scale(1.04); }
+
+        /* Features */
+        .features {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .feature-card .icon {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #6e6e73;
+            line-height: 1.5;
+        }
+
+        /* Privacy banner */
+        .privacy-banner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 60px;
+        }
+        .privacy-banner-inner {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 32px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .privacy-banner-inner .icon { font-size: 2rem; }
+        .privacy-banner-inner div { flex: 1; min-width: 200px; }
+        .privacy-banner-inner h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .privacy-banner-inner p {
+            font-size: 0.95rem;
+            color: #6e6e73;
+            line-height: 1.5;
+        }
+        .privacy-banner-inner a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .privacy-banner-inner a:hover { text-decoration: underline; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 24px 48px;
+            color: #6e6e73;
+            font-size: 0.85rem;
+        }
+        footer a { color: #6e6e73; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        footer .links { margin-top: 8px; }
+        footer .links a { margin: 0 12px; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-icon">&#9968;</div>
+        <h1>Boys Trip</h1>
+        <p class="subtitle">Track your ski day. Race your friends. No ads, no subscriptions.</p>
+        <!-- Replace # with your App Store link when available -->
+        <a href="#" class="app-store-badge">Coming Soon on the App Store</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="icon">&#128205;</div>
+            <h3>Real-Time Tracking</h3>
+            <p>GPS-powered speed, vertical feet, distance, and automatic run detection — even with your phone in your pocket.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#128101;</div>
+            <h3>Group Sync</h3>
+            <p>Connect with friends over local Wi-Fi. See everyone's live stats on a shared leaderboard with a simple group code.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#9889;</div>
+            <h3>Quick Challenges</h3>
+            <p>Head-to-head races right from the lift. Countdown, race, and compare scores with fall detection built in.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#128200;</div>
+            <h3>Day Recaps</h3>
+            <p>End-of-day summaries with speed bands, accolades, and highlights. See who crushed the most vert.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#127956;</div>
+            <h3>Trip Tracking</h3>
+            <p>Group multi-day sessions into trips. See aggregated stats for weekend getaways and ski vacations.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">&#128274;</div>
+            <h3>Privacy First</h3>
+            <p>No accounts, no cloud, no analytics. All your data stays on your device. Peer sync is local network only.</p>
+        </div>
+    </section>
+
+    <section class="privacy-banner">
+        <div class="privacy-banner-inner">
+            <div class="icon">&#128737;</div>
+            <div>
+                <h3>Your data stays on your device</h3>
+                <p>Boys Trip collects zero data externally. No analytics, no tracking, no third-party SDKs. Read our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Henry Sherwood</p>
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="mailto:henrysherwood4@gmail.com">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
